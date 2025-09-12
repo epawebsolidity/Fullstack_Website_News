@@ -93,7 +93,7 @@ Berikut langkah-langkah pengujian aplikasi agar kamu bisa mencoba fitur utama de
 Saat pertama kali membuka website kamu akan mendapatkan menu home
 
 <p align="center">
-  <img src="https://github.com/epa-fe-001/Web3-TokenERC-FrontEnd-React/blob/main/front-testnet/src/images/connect_metamask.PNG" alt="Connect Wallet MetaMask" width="400" />
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/News_Home_Users.PNG" alt="Connect Wallet MetaMask" width="400" />
 </p>
 
 ---
