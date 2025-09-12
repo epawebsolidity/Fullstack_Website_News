@@ -105,19 +105,23 @@ Yang Kedua Ada menu Bagian Berita User dapat melihat berita para penulis yang su
 </p>
 
 
-### Ketika Ada Menu Dokumentasi
+### Ketiga Ada Menu Dokumentasi
 
 Menu ini merupakan sebuah dokumentasi penggunaan website. kita dapat melihat bagaimana cara penggunaan sistem dan baik dan benar pada menu dokumentasi ini.
 
 <p align="center">
-  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/News_Berita_Users.PNG" alt="Connect Wallet MetaMask" width="400" />
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/News_Docs_Users.PNG" alt="Connect Wallet MetaMask" width="400" />
 </p>
 
-### Ketika Ada Menu Tentang
+### Keempat Ada Menu Tentang
 
 Menu ini merupakan tentang siapa yang membuat dan anda dapat menghubungi developer pada menu ini tinggal klik hubungi kami.
 
 <p align="center">
-  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/News_Berita_Users.PNG" alt="Connect Wallet MetaMask" width="400" />
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/News_tentang_Users.PNG" alt="Connect Wallet MetaMask" width="400" />
 </p>
 ---
+
+---
+### 2. Tampilan Pengujian Bagian Penulis
+### Pertama Ada 
