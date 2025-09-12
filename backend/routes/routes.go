@@ -10,6 +10,7 @@ func Setup(app *fiber.App) {
 	SetupUserRoutes(app)
 	SetupPublicAuthRoutes(app)
 	SetupNewsRoutes(app)
+	SetupCommentRoutes(app)
 	app.Use(middlewares.IsUserAuthenticated)
 	SetupAuthRoutes(app)
 	SetupPrivateUsersRoutes(app)

@@ -16,16 +16,28 @@ export interface NewsType {
   user?: any;
 }
 
+// Definisi tipe komentar
+export interface CommentType {
+  id: number;
+  user: string;
+  avatar: string;
+  text: string;
+  time: string;
+  usersId?: number; // ✅ untuk identifikasi user login
+}
+
 // Definisi tipe context
 interface NewsContextType {
-  news: NewsType[]; // berita terkonfirmasi
-  newsall: NewsType[]; // semua berita
+  news: NewsType[];
+  newsall: NewsType[];
+  comments: CommentType[];
   loading: boolean;
   error: string | null;
   refreshNews: () => void;
   fetchNewsAll: () => void;
   getNewsById: (id: number) => Promise<NewsType | null>;
   setNewsAll: React.Dispatch<React.SetStateAction<NewsType[]>>;
+  getCommentByNewsId: (id: number) => Promise<void>;
 }
 
 const NewsContext = createContext<NewsContextType | undefined>(undefined);
@@ -35,6 +47,7 @@ export const NewsProvider: React.FC<{ children: ReactNode }> = ({
 }) => {
   const [news, setNews] = useState<NewsType[]>([]);
   const [newsall, setNewsAll] = useState<NewsType[]>([]);
+  const [comments, setComments] = useState<CommentType[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -98,12 +111,39 @@ export const NewsProvider: React.FC<{ children: ReactNode }> = ({
     }
   };
 
-  // get detail by id
+  // get komentar by news id
+  const getCommentByNewsId = async (id: number) => {
+    try {
+      const res = await axiosInstance.get(`/news/comment/${id}`);
+      const { data } = res.data;
+
+      const commentsData = Array.isArray(data) ? data : data.comments;
+
+      const mapped: CommentType[] = Array.isArray(commentsData)
+        ? commentsData.map((item: any) => ({
+            id: item.id,
+            user: item.user?.Username || "Anonim",
+            avatar: "https://i.pravatar.cc/40",
+            text: item.Comment_News,
+            time: `${item.Date_Comment} Pukul ${item.Time}`,
+            usersId: item.user?.id,
+          }))
+        : [];
+
+      setComments(mapped);
+    } catch (err) {
+      console.error("Gagal ambil komentar:", err);
+      setComments([]);
+    }
+  };
+
+  // get detail news by id
   const getNewsById = async (id: number): Promise<NewsType | null> => {
     try {
       const res = await axiosInstance.get(`/news/${id}`);
       const { data } = res.data;
-      return {
+
+      const news: NewsType = {
         id: data.id,
         title: data.Title_News,
         description: data.News_Content,
@@ -115,6 +155,21 @@ export const NewsProvider: React.FC<{ children: ReactNode }> = ({
         status: data.Status,
         user: data.user,
       };
+
+      const mappedComments: CommentType[] = Array.isArray(data.comments)
+        ? data.comments.map((item: any) => ({
+            id: item.id,
+            user: item.user?.Username || "Anonim",
+            avatar: "https://i.pravatar.cc/40",
+            text: item.Comment_News,
+            time: `${item.Date_Comment} ${item.Time}`,
+            usersId: item.user?.id,
+          }))
+        : [];
+
+      setComments(mappedComments);
+
+      return news;
     } catch (err) {
       console.error("Gagal fetch detail berita:", err);
       return null;
@@ -122,7 +177,7 @@ export const NewsProvider: React.FC<{ children: ReactNode }> = ({
   };
 
   useEffect(() => {
-    fetchNews(); // default ambil berita konfirmasi
+    fetchNews();
   }, []);
 
   return (
@@ -130,12 +185,14 @@ export const NewsProvider: React.FC<{ children: ReactNode }> = ({
       value={{
         news,
         newsall,
+        comments,
         loading,
         error,
         refreshNews: fetchNews,
         fetchNewsAll,
         getNewsById,
         setNewsAll,
+        getCommentByNewsId,
       }}
     >
       {children}

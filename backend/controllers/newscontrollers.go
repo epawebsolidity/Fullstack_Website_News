@@ -13,7 +13,6 @@ import (
 	"github.com/google/uuid"
 )
 
-// ✅ Save News
 func SaveNews(c *fiber.Ctx) error {
 	titleNews := c.FormValue("title_news")
 	tanggalNews := c.FormValue("tanggal_news")

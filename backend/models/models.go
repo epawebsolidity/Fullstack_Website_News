@@ -40,9 +40,25 @@ type News struct {
 	Writer       string `gorm:"type:varchar(80)"`
 	Status       string `gorm:"type:varchar(80)"`
 	UserId       uint   `gorm:"not null" json:"usersId"`
-	Users        Users  `json:"user" gorm:"foreignKey:UserId;references:Id"`
+	Users Users `json:"user" gorm:"foreignKey:UserId;references:Id"`
+
+	// Relasi ke Comment
+	Comments []Comment `json:"comments" gorm:"foreignKey:News_Id;references:Id"`
 }
 
+
+type Comment struct {
+	Id           uint   `gorm:"primaryKey" json:"id"`
+	Comment_News   string `gorm:"type:text"`
+	Date_Comment string `gorm:"type:varchar(80)"`
+	Time  string `gorm:"type:varchar(80)"`
+	News_Id uint   `gorm:"not null" json:"newsId"`
+	UserId       uint   `gorm:"not null" json:"usersId"`
+	Users Users `json:"user" gorm:"foreignKey:UserId;references:Id"`
+
+	// Relasi ke News
+	News News `json:"news" gorm:"foreignKey:News_Id;references:Id"`
+}
 func (users *Users) SetPassword(password string) error {
 	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(password), 10)
 	if err != nil {
