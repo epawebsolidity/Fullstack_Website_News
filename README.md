@@ -96,4 +96,12 @@ Saat pertama kali membuka website kamu akan mendapatkan menu home
   <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/News_Home_Users.PNG" alt="Connect Wallet MetaMask" width="400" />
 </p>
 
+### Kedua Ada Menu Berita
+
+Yang Kedua Ada menu Bagian Berita User dapat melihat berita para penulis yang sudah dikonfirmasi dengan benar dan baik oleh para admin dan kepada desa, kita dapat melihat berita tanpa harus melakukan sebuah login pada website.
+
+<p align="center">
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/News_Dosc_Users.PNG" alt="Connect Wallet MetaMask" width="400" />
+</p>
+
 ---
