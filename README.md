@@ -110,7 +110,7 @@ Yang Kedua Ada menu Bagian Berita User dapat melihat berita para penulis yang su
 Menu ini merupakan sebuah dokumentasi penggunaan website. kita dapat melihat bagaimana cara penggunaan sistem dan baik dan benar pada menu dokumentasi ini.
 
 <p align="center">
-  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/News_Docs_Users.PNG" alt="Connect Wallet MetaMask" width="400" />
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/News_Dosc_Users.PNG" alt="Connect Wallet MetaMask" width="400" />
 </p>
 
 ### Keempat Ada Menu Tentang
