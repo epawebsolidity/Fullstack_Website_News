@@ -153,3 +153,50 @@ Penulis data berkomtar pada berita yang di upload atau berita penulis lainnya ya
 <p align="center">
   <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/News_Penulis_Komentar.PNG" alt="Connect Wallet MetaMask" width="400" />
 </p>
+---
+
+---
+### 3. Tampilan Pengujian Bagian Admin
+Tentunya menu admin terdapat bagian yang sama pada users dan penulis jadi saya akan menjelaskan bagian admin yang belum ada saja.
+### Pertama Ada Menu Konfirmasi Berita
+Pada Bagian Menu ini Admin Dapat mengkonfirmasi Berita yang di tulis oleh penulis jika berita tidak valid admin tidak diharuskan untuk mengkonfirmasi namun jika itu berita yang valid admin di haruskan untuk mengkonfirmasi.
+
+<p align="center">
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/News_Admin_Konfirmasi_Berita.PNG" alt="Connect Wallet MetaMask" width="400" />
+</p>
+
+
+### Kedua Ada Menu Akun Banned
+
+Pada Menu ini admin dapat membanned akun penulis yang sengaja mengajukan berita hoak ataupun tidak sopan dalam berbicara atau berkomunikasi pada komentar.
+
+<p align="center">
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/Admin_Banned_Pengguna.PNG" alt="Connect Wallet MetaMask" width="400" />
+</p>
+---
+
+---
+### 4. Kemudian Tampilan Responsive atau Tampilan Untuk Mobile
+Pada Bagian ini adalah sebuah tampilan website yang sudah di buat secara responsive pada bagian mobile atau HandPhone.
+
+<p align="center">
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/mobile_01.PNG" alt="mobile_01" width="250" />
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/mobile_02.PNG" alt="mobile_02" width="250" />
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/mobile_03.PNG" alt="mobile_03" width="250" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/mobile_04.PNG" alt="mobile_04" width="250" />
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/mobile_05.PNG" alt="mobile_05" width="250" />
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/mobile_06.PNG" alt="mobile_06" width="250" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/mobile_07.PNG" alt="mobile_07" width="250" />
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/mobile_08.PNG" alt="mobile_08" width="250" />
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/mobile_09.PNG" alt="mobile_09" width="250" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/mobile_10.PNG" alt="mobile_10" width="250" />
+</p>
