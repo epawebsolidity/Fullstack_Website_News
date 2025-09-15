@@ -113,4 +113,43 @@ Menu ini merupakan tentang siapa yang membuat dan anda dapat menghubungi develop
 
 ---
 ### 2. Tampilan Pengujian Bagian Penulis
-### Pertama Ada 
+### Pertama Ada Menu Daftar
+Pada tampilan ini, sistem menampilkan daftar pengguna atau penulis pada website berita, Tujuannya adalah agar penulis dapat membuat sebuah berita yang valid.
+
+<p align="center">
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/News_Penulis_Register.PNG" alt="Connect Wallet MetaMask" width="400" />
+</p>
+
+
+### Kedua Ada Menu Login
+
+Ketika Penulis Berhasil Mendaftar maka dia harus melakukan login untuk membuat sebuah berita
+
+<p align="center">
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/News_Penulis_Login.PNG" alt="Connect Wallet MetaMask" width="400" />
+</p>
+
+### Ketiga Ada Menu Pengajuan Berita
+
+Pada Menu Ini Penulis harus menginput berita dengan benar sesuai dengan realita, agar berita ini dapat di konfirmasi oleh admin.
+
+<p align="center">
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/News_Penulis_Pengajuan_Berita.PNG" alt="Connect Wallet MetaMask" width="400" />
+</p>
+
+
+### Keempat Ada Menu Pemberitahuan
+
+Pada Menu ini ketika penulis berhasil melakukan sebuah penginputan berita ataupun berita telah dikonfirmasi oleh admin namun jika tidak ada pemberitahuan berita telah di konfirmasi mungkin berita anda tidak di konfirmasi admin karna tidak benar atau tidak valid.
+
+<p align="center">
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/News_Penulis_Pemberitahuan.PNG" alt="Connect Wallet MetaMask" width="400" />
+</p>
+
+### Kelima Ada Menu Komentar
+
+Penulis data berkomtar pada berita yang di upload atau berita penulis lainnya yang di upload, dan bukan hanya penulis admin juga dapat membuat sebuah komentar pada berita. jadi kita dapat berkomunikasi lewat berita antara penulis lain dan admin.
+
+<p align="center">
+  <img src="https://github.com/epawebsolidity/Fullstack_Website_News/blob/main/backend/utils/result/News_Penulis_Komentar.PNG" alt="Connect Wallet MetaMask" width="400" />
+</p>
