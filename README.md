@@ -45,17 +45,6 @@ Memudahkan admin atau pengelola dalam mengatur konten berita.
 Dapat dikembangkan lebih lanjut dengan fitur kategori, pencarian lanjutan, maupun integrasi multimedia.
 ---
 
-## ✨ Fitur Utama
-
-- Integrasi penuh dengan smart contract ERC-20 token  
-- Kirim token EchoShow ECS ERC-20 secara mudah  
-- Dukungan wallet Web3, khususnya ekstensi MetaMask di browser  
-- Claim Faucet token EchoShow ECS dengan gas fee ETH di jaringan Sepolia Testnet  
-- Faucet ETH Sepolia Testnet:  
-  [https://cloud.google.com/application/web3/faucet/ethereum/sepolia](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
-
----
-
 ## ⚙️ Instalasi
 
 ### Persyaratan
